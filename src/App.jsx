@@ -10,7 +10,6 @@ function App() {
   const [showOverlay, setShowOverlay] = useState(false)
 
   useEffect(() => {
-    // Load VFILES images from public folder
     const loadVfilesImages = () => {
       const imageUrls = []
       for (let i = 1; i <= 20; i++) {
@@ -20,7 +19,6 @@ function App() {
       setVfilesImages(imageUrls)
     }
 
-    // Load FIFA images from public folder
     const loadFifaImages = () => {
       const imageUrls = []
       for (let i = 1; i <= 20; i++) {
@@ -40,24 +38,20 @@ function App() {
       const totalImages = allImages.length
       const loadedSet = new Set()
       
-      // Create array of indices and shuffle them
       const indices = Array.from({ length: totalImages }, (_, i) => i)
       const shuffledIndices = indices.sort(() => Math.random() - 0.5)
       
-      // Load images one by one randomly over 2 seconds
       shuffledIndices.forEach((index, i) => {
         setTimeout(() => {
           loadedSet.add(index)
           setLoadedImages(new Set(loadedSet))
           
-          // Check if all images are loaded
           if (loadedSet.size === totalImages) {
-            // Wait a bit more then show overlay
             setTimeout(() => {
               setShowOverlay(true)
             }, 200)
           }
-        }, (i / totalImages) * 2000) // Spread over 2 seconds
+        }, (i / totalImages) * 2000)
       })
     }
   }, [vfilesImages, fifaImages])
