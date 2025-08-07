@@ -1,35 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/apple-touch-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VFILES</title>
-    
-    <!-- OpenGraph -->
-    <meta property="og:title" content="VFILES" />
-    <meta property="og:description" content="VFILES - Fashion, Music, and Sports Culture" />
-    <meta property="og:image" content="/og_image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.vfiles.com/" />
-    <meta property="og:site_name" content="VFILES" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VFILES" />
-    <meta name="twitter:description" content="VFILES - Fashion, Music, and Sports Culture" />
-    <meta name="twitter:image" content="/og_image.jpg" />
-    <meta name="twitter:site" content="@vfiles" />
-    
-    <!-- Additional SEO -->
-    <meta name="description" content="VFILES - Fashion, Music, and Sports Culture" />
-    <meta name="keywords" content="VFILES, fashion, music, sports, FIFA 1904, culture" />
-    <meta name="author" content="VFILES" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VFILES</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="VFILES">
+  <meta name="og:description" content="ALMOST FAMOUS. VERY FAMOUS. INFAMOUS. IT BOY. IT GIRL. WEAR IT OUT. OR IN. ON STAGE. BACKSTAGE. OFF STAGE. VFILES UNIFORM FOR EVERYONE.">
+  <meta property="og:image" content="/assets/og_image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vfiles.com/">
+  <meta property="og:site_name" content="VFILES">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VFILES">
+  <meta name="twitter:description" content="ALMOST FAMOUS. VERY FAMOUS. INFAMOUS. IT BOY. IT GIRL. WEAR IT OUT. OR IN. ON STAGE. BACKSTAGE. OFF STAGE. VFILES UNIFORM FOR EVERYONE.">
+  <meta name="twitter:image" content="/assets/og_image.jpg">
+  <meta name="twitter:site" content="@vfiles">
+  <meta name="twitter:creator" content="@vfiles">
+  
+  <!-- Additional SEO -->
+  <meta name="description" content="ALMOST FAMOUS. VERY FAMOUS. INFAMOUS. IT BOY. IT GIRL. WEAR IT OUT. OR IN. ON STAGE. BACKSTAGE. OFF STAGE. VFILES UNIFORM FOR EVERYONE.">
+  <meta name="keywords" content="VFILES, fashion, music, sports, FIFA 1904, culture">
+  <meta name="author" content="VFILES">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Styles and Scripts -->
+  <link rel="stylesheet" href="style.css">
+  <script src="loading.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <a href="https://www.vfiles.com/" id="vfiles" class="link-container">
+        <div class="overlay" id="vfiles-overlay">
+          <img src="/assets/vfiles.svg" alt="VFILES" class="vfiles-logo">
+        </div>
+        <div id="vfiles-grid" class="image-grid">
+          <div class="image-grid-item" data-index="0" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_01.webp')"></div>
+          <div class="image-grid-item" data-index="1" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_02.webp')"></div>
+          <div class="image-grid-item" data-index="2" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_03.webp')"></div>
+          <div class="image-grid-item" data-index="3" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_04.webp')"></div>
+          <div class="image-grid-item" data-index="4" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_05.webp')"></div>
+          <div class="image-grid-item" data-index="5" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_06.webp')"></div>
+          <div class="image-grid-item" data-index="6" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_07.webp')"></div>
+          <div class="image-grid-item" data-index="7" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_08.webp')"></div>
+          <div class="image-grid-item" data-index="8" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_09.webp')"></div>
+          <div class="image-grid-item" data-index="9" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_10.webp')"></div>
+          <div class="image-grid-item" data-index="10" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_11.webp')"></div>
+          <div class="image-grid-item" data-index="11" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_12.webp')"></div>
+          <div class="image-grid-item" data-index="12" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_13.webp')"></div>
+          <div class="image-grid-item" data-index="13" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_14.webp')"></div>
+          <div class="image-grid-item" data-index="14" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_15.webp')"></div>
+          <div class="image-grid-item" data-index="15" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_16.webp')"></div>
+          <div class="image-grid-item" data-index="16" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_17.webp')"></div>
+          <div class="image-grid-item" data-index="17" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_18.webp')"></div>
+          <div class="image-grid-item" data-index="18" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_19.webp')"></div>
+          <div class="image-grid-item" data-index="19" style="background-image: url('/assets/images/vfiles/VFILES_PicGrid_20.webp')"></div>
+        </div>
+      </a>
+
+      <a href="https://fifa1904.vfiles.com/" id="fifa" class="link-container">
+        <div class="overlay" id="fifa-overlay">
+          <img src="/assets/chrome_logo.png" alt="FIFA" class="fifa-logo">
+        </div>
+        <div id="fifa-grid" class="image-grid">
+          <div class="image-grid-item" data-index="20" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_01.webp')"></div>
+          <div class="image-grid-item" data-index="21" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_02.webp')"></div>
+          <div class="image-grid-item" data-index="22" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_03.webp')"></div>
+          <div class="image-grid-item" data-index="23" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_04.webp')"></div>
+          <div class="image-grid-item" data-index="24" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_05.webp')"></div>
+          <div class="image-grid-item" data-index="25" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_06.webp')"></div>
+          <div class="image-grid-item" data-index="26" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_07.webp')"></div>
+          <div class="image-grid-item" data-index="27" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_08.webp')"></div>
+          <div class="image-grid-item" data-index="28" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_09.webp')"></div>
+          <div class="image-grid-item" data-index="29" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_10.webp')"></div>
+          <div class="image-grid-item" data-index="30" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_11.webp')"></div>
+          <div class="image-grid-item" data-index="31" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_12.webp')"></div>
+          <div class="image-grid-item" data-index="32" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_13.webp')"></div>
+          <div class="image-grid-item" data-index="33" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_14.webp')"></div>
+          <div class="image-grid-item" data-index="34" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_15.webp')"></div>
+          <div class="image-grid-item" data-index="35" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_16.webp')"></div>
+          <div class="image-grid-item" data-index="36" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_17.webp')"></div>
+          <div class="image-grid-item" data-index="37" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_18.webp')"></div>
+          <div class="image-grid-item" data-index="38" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_19.webp')"></div>
+          <div class="image-grid-item" data-index="39" style="background-image: url('/assets/images/fifa/FIFA_PicGrid_20.webp')"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
 </html>
